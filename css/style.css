@@ -7,6 +7,7 @@
   --primary-bcg-button: #f5f4fa;
   --footer-adress-link-color: rgba(255, 255, 255, 0.6);
   --border-primary-color: #eeeeee;
+  --border-secondary-color: #ececec;
 }
 
 body {
@@ -59,7 +60,7 @@ img {
 }
 /* Header */
 .page-header {
-  outline: 2px solid tomato;
+  border-bottom: 1px solid var(--border-secondary-color);
 }
 .page-nav {
   display: flex;
@@ -138,7 +139,6 @@ img {
 .hero-section {
   background-color: var(--secondary-bcg-color);
   text-align: center;
-  outline: 2px solid tomato;
 }
 .hero-title {
   margin-top: 0;
