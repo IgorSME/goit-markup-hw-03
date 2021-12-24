@@ -30,7 +30,7 @@ img {
   height: auto;
 }
 
-.list {
+ul {
   padding: 0;
   margin: 0;
 
@@ -137,12 +137,16 @@ img {
 }
 /* Hero */
 .hero-section {
+  padding: 200px 0;
   background-color: var(--secondary-bcg-color);
   text-align: center;
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
 
   color: var(--white-text-color);
   font-weight: 900;
@@ -199,8 +203,11 @@ img {
 
   background-color: var(--white-text-color);
 }
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .work-employe {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -209,8 +216,6 @@ img {
   text-align: center;
 }
 .work-desccription {
-  margin-bottom: 30px;
-
   color: var(--secodary-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -218,11 +223,13 @@ img {
 }
 /* Footer */
 .footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bcg-color);
 }
 .footer-items {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
 }
 .footer-contacts {
   text-decoration: none;
@@ -235,19 +242,16 @@ img {
 .footer-contacts:focus {
   color: var(--white-text-color);
 }
-.footer-contacts.mail {
-  display: block;
-  margin-bottom: 9px;
-}
 .footer-maps {
-  display: block;
-  margin-bottom: 9px;
   color: var(--white-text-color);
 }
 .address {
   margin-top: 20px;
+  font-style: normal;
 }
-
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .auth-link:hover,
 .auth-link:focus,
 .footer-auth-link:hover,
@@ -265,6 +269,8 @@ img {
 }
 .filter-btn {
   padding: 6px 22px;
+  border-color: transparent;
+  border-radius: 4px;
   color: var(--primary-text-color);
   background-color: var(--primary-bcg-button);
   font-family: inherit;
@@ -343,7 +349,4 @@ img {
   color: var(--secodary-text-color);
   font-size: 14px;
   line-height: 1.71;
-}
-.address {
-  font-style: normal;
 }
